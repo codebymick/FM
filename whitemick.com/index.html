@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+	<title>&lt;&frasl;mickwhite&gt;</title>
+	<meta charset="utf-8" />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+	<meta name='format-detection' content='telephone=no'>
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900" rel="stylesheet">
+	<link type='text/css' rel='stylesheet' href='./stylesheets/styles.css'>
+	<link type='text/css' rel='stylesheet' href='./stylesheets/responsive.css'>
+
+	<!--ICO FILES -->
+	<META ROBOTS="NOINDEX, NOFOLLOW">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="./images/ico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./images/ico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./images/ico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./images/ico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./images/ico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./images/ico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./images/ico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./images/ico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/ico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./images/ico/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./images/ico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/ico/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./images/ico/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+	<script>
+		var vid = document.getElementById("bgvid");
+		var pauseButton = document.querySelector("#polina button");
+		vid.playbackRate = .7;
+
+		function vidFade() {
+			vid.classList.add("stopfade");
+		}
+
+		vid.addEventListener('ended', function() {
+			// only functional if "loop" is removed
+			vid.pause();
+			// to capture IE10
+			vidFade();
+		});
+
+
+		pauseButton.addEventListener("click", function() {
+			vid.classList.toggle("stopfade");
+			if (vid.paused) {
+				vid.play();
+				pauseButton.innerHTML = "Pause";
+			} else {
+				vid.pause();
+				pauseButton.innerHTML = "Paused";
+			}
+		})
+
+	</script>
+
+	<div id='header' class='mmfixed front'>
+		<!--<header class= "outerWrap thinner headline ">-->
+		<nav class="outerWrap">
+			<!--brackets-->
+			<div class="brackets background" href="http://www.whitemick.com" target="_blank">
+			</div>
+			<div class="innerWrap">
+				<a href="#main">
+					<div class="logo"></div>
+				</a>
+				<div id="burger">
+					<ul>
+						<li class="history">
+							<a href="#history">history</a>
+
+						</li>
+						<li class="quals">
+							<a href="#quals">qualifications</a>
+
+						</li>
+						<li class="folio">
+							<a href="#folio">gallery</a>
+
+						</li>
+						<li class="contact">
+							<a href="mailto:hello@whitemick.com">contact</a>
+
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+	</div>
+	<div id="main">
+
+		<div id="anim ">
+			<div id="dex-sign " class="playAnim " href="http://www.whitemick.com " target="_blank "></div>
+
+		</div>
+		<div id="blurb" class="outerWrap">
+			<video muted poster="http://www.whitemick.com/images/movie/desktop.png" id="bgvid" playsinline autoplay muted loop>
+				<!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for  the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+				<source src="./images/movie/render.mp4" type="video/mp4">
+				<!--<source src="./images/movie/snow.WebM" type="video/webm">-->
+			</video>
+			<div class="innerWrap center half ">
+				<h1>
+					<br>&emsp;<br>
+				</h1>
+
+				<p>i love cool web design.<br></p><br>
+				<p>i live to grow my code skills.</p><br>
+				<h1>
+					<br>&emsp;<br>
+				</h1>
+
+
+			</div>
+		</div>
+	</div>
+	<div class="clearBlock"></div>
+
+	<div id="history" class="outerWrap">
+		<div class="innerWrap">
+			<h1>work history</h1>
+			<div class=" left quart ">
+				<h2>front end developer</h2>
+				<h3>re7consulting</h3>
+				<h4>Fulda, Germany</h4>
+				<h4>jan 2017- current</h4>
+				<br>&emsp;<br>
+			</div>
+			<div class="left quart ">
+				<h2>web developer</h2>
+				<h3>ubCool.it</h3>
+				<h4>Cairns, Australia</h4>
+				<h4>2014 - 2016</h4>
+				<br>&emsp;<br>
+			</div>
+			<div class="left quart ">
+				<h2>Managing Director</h2>
+				<h3>Parrotfish Lodge</h3>
+				<h4>Port Douglas, Australia</h4>
+				<h4>2009 - 2014</h4>
+				<br>&emsp;<br>
+			</div>
+			<div class="left quart ">
+				<h2>General Manager</h2>
+				<h3>A.B.A.G Pty Ltd</h3>
+				<h4>Melbourne, Australia</h4>
+				<h4>2003 - 2009</h4>
+				<br>&emsp;<br>
+			</div>
+			<div class="clearBlock"></div>
+
+		</div>
+
+
+	</div>
+	<div class="clearBlock"></div>
+	<div id="quals" class="outerWrap ">
+		<div class="innerWrap ">
+			<h1>Qualifications</h1>
+			<div class="left half ">
+				<h2>Bachelor Information Technology</h2>
+				<h3>James Cook University, Australia</h3>
+				<h4>2015 - current</h4>
+				<br>&emsp;<br>
+				<br>&emsp;<br>
+			</div>
+			<div class="right half ">
+				<h2>Bachelor Business Management</h2>
+				<h3>Victoria University Technology</h3>
+				<h4>1995 - 1998</h4>
+				<br>&emsp;<br>
+				<br>&emsp;<br>
+			</div>
+		</div>
+		<div class="clearBlock"></div>
+
+	</div>
+
+	<div id="folio" class="outerWrap">
+		<div class="innerWrap gallery">
+			<h1>Gallery</h1>
+			<a href="http://freddymutnosh.com/drbosse/index.html" class="site1 galleryIMG">Dr Bosse</a>
+			<a href="http://www.eat-play-stay.com" class="site2 galleryIMG">Eat Play Stay</a>
+			<a href="http://www.kameleon-pr.com" class="site3 galleryIMG">Kameleon PR</a>
+			<a href="http://freddymutnosh.com/flowerlady/index.html" class="site4 galleryIMG">The Flower Lady</a>
+			<a href="http://whitemick.com/mebay/index.html" class="site5 galleryIMG">MEBAY personlal CV</a>
+			<a href="http://freddymutnosh.com/pfl/index.php" class="site6 galleryIMG">Parrotfish Lodge Resort</a>
+			<a href="http" class="site7 galleryIMG">Personal CV</a>
+			<a href="http://www.ubcool.it" class="site8 galleryIMG">UBCool.it</a>
+			<a href="http://cvoogle.com" class="site9 galleryIMG">CVoogle personal CV</a>
+			<a href="http://whitemick.com/folio/index.html" class="site10 galleryIMG">Scrolling Personal CV</a>
+			<a href="http://www.amzncv.com" class="site11 galleryIMG">AMZN personal CV</a>
+			<a href="http://www.freddymutnosh.com" class="site12 galleryIMG">Freddy Mutnosh</a>
+		</div>
+		<div class="clearBlock"></div>
+	</div>
+	<div class="footer">
+		<!--brackets-->
+		<div class="brackets background" href="http://www.whitemick.com" target="_blank">
+		</div>
+		<a>copyright whitemick.com &copy;2017</a>
+	</div>
+	<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
